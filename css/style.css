@@ -1,0 +1,222 @@
+/* ANCHOR fonts*/
+@font-face {
+    font-family: "IBM";
+    src: url(../fonts/IBMPlexMono-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "IBM";
+    src: url(../fonts/IBMPlexMono-Italic.ttf) format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "IBM";
+    src: url(../fonts/IBMPlexMono-ExtraLightItalic.ttf) format("truetype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "IBM";
+    src: url(../fonts/IBMPlexMono-ExtraLightItalic.ttf) format("truetype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+/* ANCHOR Custom Proteries */
+body{
+    --color-black: #191919;
+    --color-white: #e1e1e1;
+    --color-gray: #898989;
+    --color-green: #13f270;
+    --color-red: #eb0808;
+    --color-purple: #cb06d9;
+    --color-yellow: #c1de04;
+    --color-blue: #03bfee;
+
+    --font: "IBM", monospace;
+    --line: 3ch;
+    --font-scale: 0.4vw;
+}
+
+body.invert{
+    --color-black: #e1e1e1;
+    --color-white: #191919;
+    --color-gray: #898989;
+    --color-green: #13f270;
+    --color-red: #eb0808;
+    --color-purple: #cb06d9;
+    --color-yellow: #c1de04;
+    --color-blue: #03bfee;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: var(--font);
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(1rem + 0.4vw);
+    line-height: var(--line);
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+header,
+main,
+footer{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+h1{
+    color: var(--color-blue);
+    font-size: calc(1.6rem + var(--font-scale));
+    font-weight: 200;
+    line-height: var(--line);
+    margin: 0;
+}
+
+h2{
+    color: var(--color-blue);
+    font-size: calc(1.6rem + var(--font-scale));
+    font-weight: 200;
+    line-height: var(--line);
+    margin: 0;
+}
+
+h3{
+    color: var(--color-blue);
+    font-size: calc(1.6rem + var(--font-scale));
+    font-weight: 200;
+    line-height: var(--line);
+    margin: 0;
+}
+h4{
+    color: var(--color-blue);
+    font-size: calc(1.6rem + var(--font-scale));
+    font-weight: 200;
+    line-height: var(--line);
+    margin: 0;
+}
+h5{
+    color: var(--color-blue);
+    font-size: calc(1.6rem + var(--font-scale));
+    font-weight: 200;
+    line-height: var(--line);
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav > ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.link-blue,
+.link-purple,
+.link-green,
+.link.grey,
+.link-white,
+.link-red{
+    cursor: grab;
+}
+
+.link-red{
+    color: var(--color-red);
+}
+
+.link-red:hover{
+    color: var(--color-black);
+    background: var(--color-red);
+}
+
+.link-grey{
+    color: var(--color-grey);
+}
+
+.link-grey:hover{
+    color: var(--color-black);
+    background: var(--color-white);
+}
+
+.link-white{
+    color: var(--color-red);
+}
+
+.link-white:hover{
+    color: var(--color-black);
+    background: var(--color-white);
+}
+
+.link-green{
+    color: var(--color-red);
+}
+
+.link-green:hover{
+    color: var(--color-black);
+    background: var(--color-green);
+}
+
+
+.link-blue{
+    color: var(--color-blue);
+}
+
+.link-blue:hover{
+    color: var(--color-black);
+    background: var(--color-blue);
+}
+
+.link-purple{
+    color: var(--color-purple);
+}
+
+.link-purple:hover{
+    color: var(--color-black);
+    background: var(--color-purple);
+}
+
+.text-black{
+    color: var(--color-black);
+}
+
+.text-red{
+    color: var(--color-red);
+}
+
+.text-white{
+    color: var(--color-white);
+}
+
+.text-grey{
+    color: var(--color-gray);
+}
+
+
+.text-green{
+    color: var(--color-green);
+}
+
+.text-blue{
+    color: var(--color-blue);
+}
+
+#page-logo{
+    font-style: italic;
+}
